@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Global Layoffs Data Cleaning | George Oduk</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Global Layoffs Data Cleaning portfolio project using MySQL to clean, standardise and prepare a raw layoffs dataset for analysis." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body class="is-preload sql-cleaning-page">
+
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="image avatar"><img src="images/profile.jpg" alt="George Oduk profile photo" /></a>
+				<h1><strong>Global Layoffs Data Cleaning</strong><br />
+				MySQL • Data Cleaning • Data Quality</h1>
+				<p><a href="index.html">← Back to Portfolio</a></p>
+			</div>
+		</header>
+
+		<div id="main">
+
+			<section>
+				<header class="major">
+					<h2>Global Layoffs Data Cleaning</h2>
+				</header>
+
+				<p>
+					A MySQL data cleaning project focused on improving data quality, standardising inconsistent values and preparing a raw global layoffs dataset for analysis.
+				</p>
+
+				<span class="image fit project-screenshot">
+					<img src="images/projects/sql-cleaning/cover.png" alt="Global layoffs MySQL data cleaning project preview" />
+				</span>
+			</section>
+
+			<section>
+				<h2>Project Summary</h2>
+				<p>
+					This project demonstrates a structured MySQL data cleaning workflow applied to a raw global layoffs dataset. The aim was to improve the reliability, consistency and usability of the data before future exploratory analysis or reporting.
+				</p>
+				<p>
+					The cleaning process involved creating staging tables, identifying and removing duplicate records, standardising text fields, converting date values into a consistent format, handling null and blank values, filling missing industry values where possible and removing records without usable layoff information.
+				</p>
+				<p>
+					The project highlights an important foundation of analytics: raw data often needs to be cleaned and standardised before meaningful insights can be produced.
+				</p>
+			</section>
+
+			<section>
+				<h2>Tools Used</h2>
+				<ul>
+					<li>MySQL for data cleaning and transformation</li>
+					<li>MySQL Workbench for writing and running SQL queries</li>
+					<li>Staging tables for protecting the original raw dataset</li>
+					<li>Window functions for duplicate detection</li>
+					<li><code>ROW_NUMBER()</code> and <code>PARTITION BY</code> for identifying duplicate records</li>
+					<li>String functions such as <code>TRIM()</code> for text standardisation</li>
+					<li><code>STR_TO_DATE()</code> for date conversion</li>
+					<li>Self-joins for filling missing values where appropriate</li>
+					<li>Data quality checks for nulls, blanks and unusable records</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Project Preview</h2>
+
+				<div class="row">
+					<article class="col-12 col-12-xsmall">
+						<span class="image fit project-screenshot">
+							<img src="images/projects/sql-cleaning/page2.png" alt="Global layoffs MySQL data cleaning project preview" />
+						</span>
+						<h3>Structured MySQL Cleaning Workflow</h3>
+						<p>
+							The project applies a clear MySQL cleaning process to transform a raw layoffs dataset into a cleaner and more analysis-ready version. The full query workflow is documented in the GitHub repository.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<section>
+				<h2>Cleaning Focus Areas</h2>
+				<ul>
+					<li>Creating staging tables to preserve the original raw data</li>
+					<li>Identifying duplicate records using window functions</li>
+					<li>Removing duplicate records from the cleaned staging table</li>
+					<li>Trimming and standardising company names</li>
+					<li>Standardising inconsistent industry values</li>
+					<li>Cleaning country values by removing unwanted punctuation</li>
+					<li>Converting date fields into a proper MySQL date format</li>
+					<li>Handling null and blank values in key fields</li>
+					<li>Using matching company records to populate missing industry values where possible</li>
+					<li>Removing records without usable layoff information</li>
+					<li>Dropping helper columns after the cleaning process was complete</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Key Skills Demonstrated</h2>
+				<ul>
+					<li>MySQL data cleaning</li>
+					<li>Staging table creation</li>
+					<li>Duplicate detection and removal</li>
+					<li>Window functions</li>
+					<li><code>ROW_NUMBER()</code></li>
+					<li><code>PARTITION BY</code></li>
+					<li>Text standardisation</li>
+					<li>Date format conversion</li>
+					<li>Null and blank value handling</li>
+					<li>Self-joins for data enrichment</li>
+					<li>Data quality checking</li>
+					<li>Preparing raw data for future analysis</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Why This Project Matters</h2>
+				<p>
+					Clean data is the foundation of accurate analysis. This project shows that I can take a raw dataset, protect the original data through staging tables and apply a logical MySQL workflow to improve consistency, completeness and usability.
+				</p>
+				<p>
+					It demonstrates practical data preparation skills that are directly relevant to analyst, business intelligence and reporting roles, where raw datasets often need to be cleaned before reliable insights can be produced.
+				</p>
+				<p>
+					The full MySQL workflow, including duplicate removal, value standardisation, null handling, date conversion and final column cleanup, is available in the GitHub repository.
+				</p>
+			</section>
+
+			<section>
+				<ul class="actions">
+					<li><a href="https://github.com/GeorgeOduk/global-layoffs-data-cleaning-mysql" class="button primary">View GitHub Repository</a></li>
+					<li><a href="https://github.com/GeorgeOduk/global-layoffs-data-cleaning-mysql/blob/main/mysql/layoffs_data_cleaning_mysql.sql" class="button">View MySQL Script</a></li>
+					<li><a href="index.html" class="button">Back to Portfolio</a></li>
+				</ul>
+			</section>
+
+		</div>
+
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/george-oduk" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/GeorgeOduk" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="mailto:george.oduk1@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; George Oduk</li>
+					<li>Design adapted from <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
